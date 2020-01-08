@@ -1,0 +1,2 @@
+.random-table{display:flex;flex-wrap:wrap}.random-table>li{width:33%;list-style:none;border:1px solid #000;border-left-width:0;box-sizing:border-box;padding:5px}.random-table>li:nth-child(3n+1){border-left-width:1px}.random-table>li:nth-child(n+4){border-top-width:0}@media print{.gacha-button{display:none}}
+/*# sourceMappingURL=src.3cec4fc0.css.map */

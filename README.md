@@ -30,3 +30,10 @@ $ make test
 ```
 $ make deploy
 ```
+
+## デプロイ (GitHub Actions おまかせな場合)
+
+### 準備
+
+- https://github.com/marketplace/actions/github-pages-action#getting-started の手順に従って Getting Started する
+- Enjoy!

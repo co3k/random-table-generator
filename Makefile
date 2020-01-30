@@ -3,6 +3,9 @@ all:
 deps:
 	yarn
 
+test: deps
+	yarn test
+
 server: deps
 	yarn run dev
 

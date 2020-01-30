@@ -17,7 +17,15 @@ https://co3k.github.io/random-table-generator/index.html
 $ make server
 ```
 
-## デプロイ
+## テスト
+
+```
+$ make test
+```
+
+## デプロイ (ローカルからやる場合)
+
+※fork した場合は package.json の homepage をうまく書き換える必要がたぶんある
 
 ```
 $ make deploy

@@ -6,13 +6,17 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
-    "parcel-bundler": "^1.12.4"
+    "jest": "^25.1.0",
+    "jest-dev-server": "^4.4.0",
+    "parcel-bundler": "^1.12.4",
+    "playwright": "^0.9.24"
   },
   "homepage": "https://co3k.github.io/random-table-generator",
   "scripts": {
     "dev": "parcel src/index.html --host localhost",
     "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test": "jest --detectOpenHandles --notify --config=jest.config.js"
   }
 }

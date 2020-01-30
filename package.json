@@ -10,7 +10,7 @@
   },
   "homepage": "https://co3k.github.io/random-table-generator",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html --host localhost",
     "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

@@ -22,9 +22,9 @@ jobs:
       env:
         CI: true
     - run: yarn build
-      if: success() && github.ref == 'master'
+      if: success() && github.ref == 'refs/heads/master'
     - uses: peaceiris/actions-gh-pages@v2
-      if: success() && github.ref == 'master'
+      if: success() && github.ref == 'refs/heads/master'
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages

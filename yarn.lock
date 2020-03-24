@@ -4589,11 +4589,6 @@ mime@1.6.0:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
-mime@^2.0.3:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
-  integrity sha512-LRxmNwziLPT828z+4YkNzloCFC2YM4wrB99k+AV5ZbEyfGNWfG8SO1FUXLmLDBSo89NrJZ4DIWeLjy1CHGhMGA==
-
 mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
@@ -5221,29 +5216,27 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-playwright-core@=0.9.24:
-  version "0.9.24"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-0.9.24.tgz#b4d61e351a1e5fd3b4603eb88f58716b2432487a"
-  integrity sha512-4yxhmbk9wQGnhOsh8C6NLeQcez/uKzCgGAVwru47/1JrQV/MNyr+t4E+VBwGEcgnjzI9F33IaKsMuYDrqhBz4w==
+playwright-core@=0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-0.12.1.tgz#07581d1cbe84bb1e438ecdb188de3ed6d5e81ee0"
+  integrity sha512-NZ8Qe/kqsgAmFBxWZnUeE+MoZ04UzNI0DHOKA+I1p/5rbpaWhe1Vx5zVNa05A1iEvOtnKV1PdIEe4IPumG2y2w==
   dependencies:
     debug "^4.1.0"
     extract-zip "^1.6.6"
     https-proxy-agent "^3.0.0"
     jpeg-js "^0.3.6"
-    mime "^2.0.3"
     pngjs "^3.4.0"
     progress "^2.0.3"
-    proxy-from-env "^1.0.0"
-    rimraf "^2.6.1"
-    uuid "^3.4.0"
+    proxy-from-env "^1.1.0"
+    rimraf "^3.0.2"
     ws "^6.1.0"
 
-playwright@^0.9.24:
-  version "0.9.24"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-0.9.24.tgz#6a29d7ab82e513c6386cde023af684ed4d1eca7d"
-  integrity sha512-CdSY4rcrzkNkLIBhbu2qlhMrQdVXZzdL/Ybufh+SB+OLutNBnfFiZsnOJ6vow2W0ik1MWM1fabqXNnyoQsVItg==
+playwright@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-0.12.1.tgz#59445ede1aecec120091db7bc95b4e626451e0b0"
+  integrity sha512-icF4+I8y7A5HjhbTsa4Eqtl2fuGe3ECvW0Wrn6aRM5eL5/AqUIgIf2U/0e1S1bEsDfz1JVvClGl5Gqw4aI5H4w==
   dependencies:
-    playwright-core "=0.9.24"
+    playwright-core "=0.12.1"
 
 pn@^1.1.0:
   version "1.1.0"
@@ -5683,10 +5676,10 @@ prop-types@^15.6.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-proxy-from-env@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.0.0.tgz#33c50398f70ea7eb96d21f7b817630a55791c7ee"
-  integrity sha1-M8UDmPcOp+uW0h97gXYwpVeRx+4=
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 psl@^1.1.24, psl@^1.1.28:
   version "1.7.0"
@@ -6071,7 +6064,7 @@ rgba-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/rgba-regex/-/rgba-regex-1.0.0.tgz#43374e2e2ca0968b0ef1523460b7d730ff22eeb3"
   integrity sha1-QzdOLiyglosO8VI0YLfXMP8i7rM=
 
-rimraf@^2.6.1, rimraf@^2.6.2:
+rimraf@^2.6.2:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
@@ -6082,6 +6075,13 @@ rimraf@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.1.tgz#48d3d4cb46c80d388ab26cd61b1b466ae9ae225a"
   integrity sha512-IQ4ikL8SjBiEDZfk+DFVwqRK8md24RWMEJkdSlgNLkyyAImcjf8SWvU1qFMDOb4igBClbTQ/ugPqXcRwdFTxZw==
+  dependencies:
+    glob "^7.1.3"
+
+rimraf@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
+  integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
   dependencies:
     glob "^7.1.3"
 
@@ -7047,11 +7047,6 @@ uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
-
-uuid@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
-  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 v8-compile-cache@^2.0.0:
   version "2.1.0"

@@ -9,7 +9,7 @@
     "jest": "^25.1.0",
     "jest-dev-server": "^4.4.0",
     "parcel-bundler": "^1.12.4",
-    "playwright": "^0.9.24"
+    "playwright": "^1.8.0"
   },
   "homepage": "https://co3k.github.io/random-table-generator",
   "scripts": {

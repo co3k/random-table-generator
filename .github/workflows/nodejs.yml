@@ -18,7 +18,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn
+      if: success() && github.ref == 'refs/heads/master'
     - run: yarn test
+      if: success() && github.ref == 'refs/heads/master'
       env:
         CI: true
     - run: yarn build
@@ -29,5 +31,3 @@ jobs:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_branch: gh-pages
         publish_dir: ./dist
-        
-        
